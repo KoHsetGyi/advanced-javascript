@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Globe scope vs function scope</title>
+    <script type="text/javascript">
+        /*if (true) {
+            var x = 10;
+        }
+        alert(x);*/
+
+        //global variable
+
+        /*myScope = "Global";
+        
+        (function () {
+            alert("Inside anonynmous function is " + myScope);
+        })();
+        alert('Outside anonynmous function is ' + myScope);*/
+
+
+        //Try to see whether the scope inside the functions is overrided
+        myScope = "Global";
+
+       /* (function () {
+            var myScope = "function"
+            alert("Inside anonynmous function is " + myScope);
+        })();
+        alert('Outside anonynmous function is ' + myScope);*/
+
+       //testing document object model
+
+        alert('Window.myscope  is ' + window.myScope);
+    </script>
+</head>
+<body>
+  <h1>Globe scope vs function scope</h1>
+
+</body>
+</html>

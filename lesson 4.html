@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript conditional operators</title>
+
+    <script type="text/javascript">
+
+        var firstValue = 25;
+        var secondValue = 29;
+        /*
+        if (firstValue > 30) {
+            alert("First case")
+        }else if (firstValue === 30) {
+            alert("Second case");
+        }else if (firstValue === 25) {
+            alert("Third case");
+        }else {
+            alert("fourth case");
+        }
+
+        if (firstValue > 20 && secondValue > 20) {
+            alert("firth case");
+        }
+
+        if (firstValue === 25 || secondValue === 25) {
+            alert("Sixth case");
+        }
+
+        var someValue = false;
+
+        if (!someValue) {
+            alert("Seventh condition");
+        }
+
+
+        var myResults = "";
+        //ternary operator
+        myResults = (firstValue === 25) ? "equal": "not equal";
+        alert(myResults);
+         */
+
+        //switch statement
+
+/*
+        var userName = "Henrymbuguak"
+        switch (userName) {
+            case "Listener":
+                document.write("Care for a good chicken?");
+                break;
+            case "Henrymbuguak":
+                document.write("Welcome back smeg head");
+                break;
+            default:
+                document.write("Are you a robot?");
+                break;
+        }
+
+*/
+        var rightNow = new Date();
+        var currentHour = rightNow.getHours();
+        switch (true) {
+            case (currentHour > 8 && currentHour <12):
+                document.write("Morning, wake up sunshine!");
+                break;
+            case (currentHour === 12):
+                document.write("Its afternoon");
+                break;
+            case (currentHour > 12 && currentHour < 18):
+                document.write("Fight the to siesta!");
+                break;
+            default:
+                document.write("Careful sparky, they will think you are worker holic!");
+                break;
+
+        }
+
+    </script>
+</head>
+<body>
+  <h1>Conditional logic in Javascript</h1>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript Loop statement</title>
+    <script type="text/javascript">
+        var playlist = []
+        playlist[0] = "Kenny chesney - come over";
+        playlist[1] = "Daughtry - September";
+        playlist[2] = "Diomond Rio - One more day";
+        playlist[3] = "Jahcure - call on me";
+        playlist[4] = "Taylor swift - Mean";
+
+        //while statement
+
+        /*var i = 0;
+        while (i <playlist.length) {
+            document.write("<br/>Now playing: " + playlist[i]);
+            i++;
+        }*/
+
+        //do while
+
+       /* var someResult = false;
+        do {
+            document.write("This statement will be printed atleast once!");
+        }
+        while (someResult === true);
+*/
+
+       //for loop
+        /*for (var i = 0; i < playlist.length; i++){
+            document.write("<br/>Now playing: " + playlist[i]);
+        }*/
+
+        //for ... in loop
+        for (i in playlist) {
+            document.write("<br/>Now Playing: " + playlist[i]);
+        }
+
+    </script>
+</head>
+<body>
+   <h1>Javascript Loop Statement</h1>
+</body>
+</html>
